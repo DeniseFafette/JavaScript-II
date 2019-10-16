@@ -4,6 +4,17 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function superHeroName(name) { 
+  let exclaim = "Ohhh nooo " + name + "!"; 
+  let codeHero = function() {
+      let calling = exclaim + "I called for a coding hero!!!";
+      console.log(calling); 
+  };
+  return codeHero(); 
+};
+
+superHeroName("Wonder Woman");
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
